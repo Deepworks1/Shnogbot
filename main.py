@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Royaldwip
 
 from configs import Config
 from pyrogram import Client, filters, idle
@@ -25,22 +25,22 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/165941ae764a56d6d9c89.jpg",
+	await event.reply_photo("https://telegra.ph/file/35857d4d81a27bf20bdeb.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-                                    [InlineKeyboardButton("Our Channel", url="https://t.me/cynitemovies"),
-                                     InlineKeyboardButton("Creator", url="https://t.me/Cyniteofficial")],
-                                    [InlineKeyboardButton("Help", callback_data="Help_msg"),
-                                     InlineKeyboardButton("About", callback_data="About_msg")]]))
+                                    [InlineKeyboardButton("🎗 My Updated Channel 🎗", url="https://t.me/+Bo4CATrJAnRmNWI9"),
+                                     InlineKeyboardButton("😎 My Owner 😎", url="https://t.me/Dreamer999")],
+                                    [InlineKeyboardButton("🤓 Help 🤓", callback_data="Help_msg"),
+                                     InlineKeyboardButton("🥸 About 🥸", callback_data="About_msg")]]))
 
 @Bot.on_message(filters.private & filters.command("help"))
 async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies"),
-             InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup"), 
-             InlineKeyboardButton("About", callback_data="About_msg")]
+            [InlineKeyboardButton("🎗 My Updated Channel 🎗", url="https://t.me/+Bo4CATrJAnRmNWI9"),
+             InlineKeyboardButton("🤑 Our Group 🤑", url="https://t.me/iPopcornMovieGroup"), 
+             InlineKeyboardButton("🥸 About 🥸", callback_data="About_msg")]
         ])
     )
 
@@ -77,11 +77,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies"),
-						InlineKeyboardButton("Join", url="https://t.me/Technicalcynite")
+						InlineKeyboardButton("🎗 My Updated Channel 🎗", url="https://t.me/Dreamer999"),
+						InlineKeyboardButton("🎯 Join 🎯", url="https://t.me/+x_SyirDsEUs4YmJl")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Admin", url="https://t.me/Dreamer999"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -96,10 +96,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies")
+						InlineKeyboardButton("🎗 My Updated Channel 🎗", url="https://t.me/+Bo4CATrJAnRmNWI9")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Owner", url="https://t.me/Dreamer999"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -117,8 +117,8 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support", url="https://t.me/cyniteofficial"),
-						InlineKeyboardButton("Channel", url="https://t.me/cynitemovies")
+						InlineKeyboardButton("Our Movie Request Group", url="https://t.me/+x_SyirDsEUs4YmJl"),
+						InlineKeyboardButton("Channel", url="https://t.me/+Bo4CATrJAnRmNWI9")
 					]
 				]
 			),
